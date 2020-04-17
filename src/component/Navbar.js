@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-import { Navbar, Nav, link } from "react-bootstrap";
-import Logo from './component/logo.jpg'
-import 
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 
-const navbar = () => {
+const Navbars = () => {
     return (
     <div>
       <Navbar bg="info" expand="lg">
@@ -11,10 +10,10 @@ const navbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Portofolio</Nav.Link>
-            <Nav.Link href="#link">Article</Nav.Link>
-            <Nav.Link href="#link">Hire Me</Nav.Link>
+            <Nav.Link><Link to='/'>Home</Link></Nav.Link>
+            <Nav.Link><Link to='/portfolio'>Portofolio</Link></Nav.Link>
+            <Nav.Link><Link to='/article'>Article</Link></Nav.Link>
+            <Nav.Link><Link to='/hireme'>Hire Me</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -22,5 +21,5 @@ const navbar = () => {
     );
   };
   
-  export default Navbar;
+  export default Navbars;
   

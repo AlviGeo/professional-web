@@ -1,8 +1,10 @@
 import React from "react";
 
-const hireme = () => {
-    return(
-        <div></div>
+const HireMe = () => {
+    return (
+        <div>
+            <h1>Hire me</h1>
+        </div>
     )
 }
 
